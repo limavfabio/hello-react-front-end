@@ -17,7 +17,7 @@ export const fetchGreeting = createAsyncThunk('greeting/fetchGreeting', async ()
     }
     const data = await response.json();
     return data.greeting;
-  } catch (error: any) {
+  } catch (error) {
     throw new Error(error.message);
   }
 });
